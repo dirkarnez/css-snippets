@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#basso {
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	
+	
+		#bottom {
+			display: inline-block;
+			border-radius: 50%;
+		}
+	
+		#freccia:hover #bottom {
+			display: inline-block;
+			border-radius: 50%;
+			border: 0.15em solid #4183D7;
+		}
+	
+		#freccia:hover #bottom:after {
+			border-top: 0.15em solid #4183D7;
+			border-right: 0.15em solid #4183D7;
+		}
+	
+		#bottom {
+			display: inline-block;
+			width: 3em;
+			height: 3em;
+			border: 0.15em solid #333;
+			border-radius: 50%;
+			margin-left: 0.75em;
+			transition: all 0.1s ease-out;
+	
+	
+		}
+	
+		#bottom:after {
+			content: '';
+			display: inline-block;
+			margin-top: 0.6em;
+			width: 1.2em;
+			height: 1.2em;
+			border-top: 0.15em solid #333;
+			border-right: 0.15em solid #333;
+			-moz-transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			transform: rotate(135deg);
+			transition: all 0.1s ease-out;
+		}
+	
+		#bottom:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+			margin-top: 0.3em;
+			width: 1.2em;
+			height: 1.2em;
+			border-top: 0.15em solid #333;
+			border-right: 0.15em solid #333;
+			-moz-transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			transform: rotate(135deg);
+			transition: all 0.1s ease-out;
+		}
+	
+	
+		#bottom:hover:after {
+			content: '';
+			display: inline-block;
+			margin-top: 0.9em;
+			width: 1.2em;
+			height: 1.2em;
+			border-top: 0.15em solid #4183D7;
+			border-right: 0.15em solid #4183D7;
+			-moz-transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+	
+		#bottom:hover:before {
+			content: '';
+			display: inline-block;
+			margin-top: 0.6em;
+			width: 1.2em;
+			height: 1.2em;
+			border-top: 0.15em solid #4183D7;
+			border-right: 0.15em solid #4183D7;
+			-moz-transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="basso">
+		<a href="#" id="freccia">
+			<span id="bottom"></span>
+		</a>
+	</div>
+</body>
+</html>
