@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 3px solid #c2e1f5;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 97.5%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #c2e1f5;
+	border-width: 34px;
+	margin-top: -34px;
+}
+</style>
+</head>
+<body>
+
+<div class="arrow_box"></div>
+</body>
+</html> 
