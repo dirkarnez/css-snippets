@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+ ._main iframe {
+	 width: 100vw;
+	 height: 100vh;
+}
+ ._main #iframe_mobile {
+	 display: block;
+}
+
+ body {
+	 margin: 0;
+	 padding: 0;
+	 font-family: 'Raleway', sans-serif;
+	 letter-spacing: 2px;
+	 color: #020202;
+	 background-color: #f9f9f9;
+}
+ ._main {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
+	 min-height: 100vh;
+
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
+p {
+	 margin: 50px;
+}
+
+ h1 {
+	 margin: 0;
+	 text-transform: uppercase;
+	 font-size: 140px;
+	 position: relative;
+}
+
+ h1:after, h1:before {
+	 content: attr(data-text);
+	 position: absolute;
+	 top: 0;
+	 color: #020202;
+	 background-color: #f9f9f9;
+	 overflow: hidden;
+}
+
+ h1:after {
+	 left: 2px;
+	 text-shadow: -1px 0 #cc0f39;
+	 animation: glitch1 2s infinite ease;
+}
+ h1:before {
+	 left: -2px;
+	 text-shadow: 1px 0 #0ffbf9;
+	 animation: glitch2 10s infinite ease;
+}
+ @keyframes glitch1 {
+	 0% {
+		 clip-path: inset(34% 0 55% 0);
+	}
+	 4% {
+		 clip-path: inset(19% 0 74% 0);
+	}
+	 8% {
+		 clip-path: inset(57% 0 23% 0);
+	}
+	 12% {
+		 clip-path: inset(75% 0 2% 0);
+	}
+	 16% {
+		 clip-path: inset(70% 0 25% 0);
+	}
+	 20% {
+		 clip-path: inset(89% 0 12% 0);
+	}
+	 24% {
+		 clip-path: inset(61% 0 7% 0);
+	}
+	 28% {
+		 clip-path: inset(76% 0 4% 0);
+	}
+	 32% {
+		 clip-path: inset(77% 0 4% 0);
+	}
+	 36% {
+		 clip-path: inset(49% 0 50% 0);
+	}
+	 40% {
+		 clip-path: inset(68% 0 25% 0);
+	}
+	 44% {
+		 clip-path: inset(3% 0 63% 0);
+	}
+	 48% {
+		 clip-path: inset(88% 0 8% 0);
+	}
+	 52% {
+		 clip-path: inset(98% 0 3% 0);
+	}
+	 56% {
+		 clip-path: inset(85% 0 1% 0);
+	}
+	 60% {
+		 clip-path: inset(86% 0 9% 0);
+	}
+	 64% {
+		 clip-path: inset(88% 0 8% 0);
+	}
+	 68% {
+		 clip-path: inset(22% 0 23% 0);
+	}
+	 72% {
+		 clip-path: inset(4% 0 25% 0);
+	}
+	 76% {
+		 clip-path: inset(53% 0 45% 0);
+	}
+	 80% {
+		 clip-path: inset(91% 0 5% 0);
+	}
+	 84% {
+		 clip-path: inset(55% 0 7% 0);
+	}
+	 88% {
+		 clip-path: inset(25% 0 40% 0);
+	}
+	 92% {
+		 clip-path: inset(29% 0 33% 0);
+	}
+	 96% {
+		 clip-path: inset(83% 0 14% 0);
+	}
+	 100% {
+		 clip-path: inset(13% 0 65% 0);
+	}
+}
+ @keyframes glitch2 {
+	 0% {
+		 clip: rect(39px, 9999px, 12px, 0);
+	}
+	 4% {
+		 clip: rect(2px, 9999px, 13px, 0);
+	}
+	 8% {
+		 clip: rect(22px, 9999px, 32px, 0);
+	}
+	 12% {
+		 clip: rect(30px, 9999px, 69px, 0);
+	}
+	 16% {
+		 clip: rect(81px, 9999px, 57px, 0);
+	}
+	 20% {
+		 clip: rect(22px, 9999px, 32px, 0);
+	}
+	 24% {
+		 clip: rect(7px, 9999px, 31px, 0);
+	}
+	 28% {
+		 clip: rect(23px, 9999px, 98px, 0);
+	}
+	 32% {
+		 clip: rect(34px, 9999px, 65px, 0);
+	}
+	 36% {
+		 clip: rect(46px, 9999px, 98px, 0);
+	}
+	 40% {
+		 clip: rect(45px, 9999px, 64px, 0);
+	}
+	 44% {
+		 clip: rect(69px, 9999px, 73px, 0);
+	}
+	 48% {
+		 clip: rect(48px, 9999px, 92px, 0);
+	}
+	 52% {
+		 clip: rect(94px, 9999px, 51px, 0);
+	}
+	 56% {
+		 clip: rect(97px, 9999px, 17px, 0);
+	}
+	 60% {
+		 clip: rect(47px, 9999px, 5px, 0);
+	}
+	 64% {
+		 clip: rect(78px, 9999px, 18px, 0);
+	}
+	 68% {
+		 clip: rect(59px, 9999px, 7px, 0);
+	}
+	 72% {
+		 clip: rect(99px, 9999px, 49px, 0);
+	}
+	 76% {
+		 clip: rect(74px, 9999px, 91px, 0);
+	}
+	 80% {
+		 clip: rect(66px, 9999px, 95px, 0);
+	}
+	 84% {
+		 clip: rect(87px, 9999px, 35px, 0);
+	}
+	 88% {
+		 clip: rect(50px, 9999px, 75px, 0);
+	}
+	 92% {
+		 clip: rect(52px, 9999px, 50px, 0);
+	}
+	 96% {
+		 clip: rect(55px, 9999px, 2px, 0);
+	}
+	 100% {
+		 clip: rect(82px, 9999px, 28px, 0);
+	}
+}
+
+ 
+ </style>
+</head>
+<body>
+<div class="_main"><h1 data-text="Secret here">Text here</h1></div>
+</body>
+</html>
